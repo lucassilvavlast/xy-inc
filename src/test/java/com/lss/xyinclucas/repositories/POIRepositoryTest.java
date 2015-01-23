@@ -57,15 +57,4 @@ public class POIRepositoryTest {
         repository.save(poi);
         Mockito.verify(mockEntityManager).persist(poi);
     }
-
-    @Test
-    public void testListPois() {
-        repository.list();
-    }
-
-    @Test
-    public void testNearestPois() {
-        repository.nearest(1, 2, 3);
-    }
-
 }
